@@ -1,2 +1,2 @@
 # ft_nmap
-my begining 
+the begining of my rewriting of nmap
