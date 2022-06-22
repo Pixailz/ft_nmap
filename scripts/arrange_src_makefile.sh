@@ -30,8 +30,13 @@ function clean_source_makefile()
 	sed -i "${cursor}d" ${MAKEFILE_PATH}
 	end_src=$(grep -nE '^\s*.*[0-9a-zA-Z]\.c$' ${MAKEFILE_PATH})
 	end_src=${end_src/:*/}
-	sed -i "${begin_src},${end_src}d" ${MAKEFILE_PATH}
-	insert_at_line "SRC_C			:="
+	if [ ! -z ${end_src} ]; then
+		sed -i "${begin_src}d" ${MAKEFILE_PATH}
+		insert_at_line "SRC_C			:="
+	else
+		sed -i "${begin_src},${end_src}d" ${MAKEFILE_PATH}
+		insert_at_line "SRC_C			:="
+	fi
 }
 
 function remove_last_backslash()
