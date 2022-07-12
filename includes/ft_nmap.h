@@ -6,7 +6,7 @@
 /*   By: brda-sil <brda-sil@students.42angouleme    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 23:56:44 by brda-sil          #+#    #+#             */
-/*   Updated: 2022/06/22 16:28:14 by brda-sil         ###   ########.fr       */
+/*   Updated: 2022/07/12 21:52:54 by brda-sil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 # include "ft_printf.h"
 # include "libft.h"
 # include "get_next_line.h"
+# include <pthread.h>
+# include <pcap.h>
 
 /* ########################################################################## */
 

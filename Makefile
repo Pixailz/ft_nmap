@@ -6,13 +6,13 @@
 #    By: brda-sil <brda-sil@students.42angouleme    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/23 01:36:34 by brda-sil          #+#    #+#              #
-#    Updated: 2022/06/22 16:36:37 by brda-sil         ###   ########.fr        #
+#    Updated: 2022/07/12 21:52:30 by brda-sil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # **************************************************************************** #
 # config
-CFLAGS			:= -Wall -Wextra -pthread
+CFLAGS			:= -Wall -Wextra -pthread -lpcap
 TARGET			:= ft_nmap
 RM				:= rm -rf
 CC				:= gcc
